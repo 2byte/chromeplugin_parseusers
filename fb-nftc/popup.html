@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FB Nftc</title>
+
+    <link rel="stylesheet" href="popup.css">
+
+    <script src="jquery.min.js"></script>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+</head>
+<body>
+
+    <form id="form-parser">
+        <label>Количество постов</label>
+        <input type="text" name="count_post" value="20">
+        <br>
+        <br>
+        <button id="start">Go...</button>
+        <!--<button id="stop">Stop</button>-->
+    </form><br >
+
+    <div id="note"></div>
+    <div id="users">
+
+    </div>
+
+</body>
+</html>

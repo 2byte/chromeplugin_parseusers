@@ -1,0 +1,18 @@
+body {
+    width: 400px;
+}
+#users {
+
+}
+
+#users .user-item {
+    display:block;
+}
+#users .user-item .avatar {
+    display:inline-block;
+    float:left;
+    clear:both;
+}
+#users .user-item .info {
+    display:inline-block;
+}

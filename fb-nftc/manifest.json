@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook parser comments",
+  "description": "Facebook parse comments by posts",
+  "version": "1.0.0",
+  "icons": {
+    "128": "news-feed-128.png"
+  },
+  "browser_action": {
+    "default_icon": "news-feed-24.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts":[{
+    "matches": ["https://www.facebook.com/*", "https://facebook.com/*"],
+    "js": ["jquery.min.js", "jquery.scrollTo.min.js"]
+  }],
+  "permissions": [
+    "activeTab",
+    "http://*/*",
+    "https://*/*",
+    "tabs",
+    "storage"
+  ]
+}
